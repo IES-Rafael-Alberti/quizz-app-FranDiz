@@ -9,8 +9,6 @@
 <body>
     <form method="post" action="quizz.php">
         <h1>PHP Quiz</h1>
-
-        
         <div class="question">
             <p>1. What does PHP stand for?</p>
             <label><input type="radio" name="q1" value="a"> a) Personal Home Page</label>
@@ -73,7 +71,13 @@
             <label><input type="radio" name="q9" value="b"> b) new ClassName {}</label>
             <label><input type="radio" name="q9" value="c"> c) ClassName {}</label>
         </div>
-
+        
+        <div class="question">
+            <p>10. ¿Cuál de los siguientes se utiliza para crear un objeto en PHP?</p>
+            <label><input type="radio" name="q10" value="a"> a) new </label>
+            <label><input type="radio" name="q10" value="b"> b) objeto</label>
+            <label><input type="radio" name="q10" value="c"> c) crear</label>
+        </div>
         <input type="submit" value="Submit">
     </form>
 </body>
