@@ -1,11 +1,11 @@
+# Utilizamos una imagen base de PHP con Apache
 FROM php:apache
 
-WORKDIR /var/www/html
+# Copiamos los archivos del sitio web al directorio del servidor web en el contenedor
+COPY ./src/ /var/www/html/
 
+# Exponemos el puerto 80 para el tráfico HTTP
 EXPOSE 80
 
-VOLUME /var/www/html
-
+# CMD para iniciar el servidor Apache al ejecutar el contenedor
 CMD ["apache2-foreground"]
-
-RUN echo "DirectoryIndex index.php" >> /etc/apache2/apache2.conf

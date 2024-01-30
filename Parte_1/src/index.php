@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="quizz.css">
 </head>
 <body>
-    <form method="post" action="quizz.php">
+    <form method="post" action="process.php">
         <h1>PHP Quiz</h1>
         <div class="question">
             <p>1. What does PHP stand for?</p>
@@ -82,3 +82,4 @@
     </form>
 </body>
 </html>
+
