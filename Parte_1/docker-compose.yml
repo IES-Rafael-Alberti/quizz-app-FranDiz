@@ -1,8 +1,0 @@
-version: '3'
-services:
-  php-apache:
-    build: .
-    ports:
-      - "8080:80"  # Mapea el puerto 8080 del host al puerto 80 del contenedor
-    volumes:
-      - ./src:/var/www/html  # Monta el directorio del sitio web del host en el directorio del servidor web del contenedor
